@@ -1,4 +1,4 @@
-👌Colocar repositorio no github👌🎈
+🎈👌Colocar projeto no github👌🎈
 
 🎈criar repositorio no github
 
