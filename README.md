@@ -1,4 +1,4 @@
-🎈👌Colocar projeto no github👌🎈
+⏩👌Colocar projeto no github👌🎈
 
 🎈criar repositorio no github
 
@@ -24,7 +24,8 @@
 
 🎈git push
 
-Fazer alteraçoes e atualizar codigo
+⏩Fazer alteraçoes e atualizar codigo
+
 🎈na pasta onde voce ja deu git bash here -> botao direito novamente -> git bash here
 
 🎈git add .
