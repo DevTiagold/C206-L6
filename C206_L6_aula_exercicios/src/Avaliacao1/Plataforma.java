@@ -8,7 +8,7 @@ public class Plataforma {
     String criados;//nome do criador
     String[] nomeDeJogos = new String[10];
     Jogo[] jogos = new Jogo[10];// vetor de 10 jogos e suas informaçoes adicionais
-    String nomeMaisCaro;
+    String nomeMaisBarato;
 
     public void mostraInfo(){//Mostra informações
         System.out.println("A " + nome + " possue os seguintes jogos: ");
@@ -31,19 +31,19 @@ public class Plataforma {
         }
 
     }
-    public void mostraMaisCaro(){//mostra mais caro
-        double maisCaro = jogos[0].preco;
-        nomeMaisCaro = jogos[0].nome;
+    public void mostraMaisBarato(){//mostra mais caro
+        double maisBarato = jogos[0].preco;
+        nomeMaisBarato = jogos[0].nome;
         for(int i = 0; i < jogos.length; i++){
             if(jogos[i] != null) {
-                if (jogos[i].preco > maisCaro) {
-                    maisCaro = jogos[i].preco;
-                    nomeMaisCaro = jogos[i].nome;
+                if (jogos[i].preco < maisBarato) {
+                    maisBarato = jogos[i].preco;
+                    nomeMaisBarato = jogos[i].nome;
                 }
             }
         }
-        System.out.println("O jogo mais caro disponivel é: " );
-        System.out.println("-" + nomeMaisCaro + " que custa R$"+ maisCaro);
+        System.out.println("O jogo mais barato disponivel é: " );
+        System.out.println("-" + nomeMaisBarato + " que custa R$"+ maisBarato);
     }
     public void calculaDlc(){//mostra quantos e quais jogos possuem DLC
         System.out.println("Possuem DLC: ");

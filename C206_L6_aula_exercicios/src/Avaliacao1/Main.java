@@ -20,7 +20,7 @@ public class Main {
             System.out.println("----------------------------------------------------------------------");
             System.out.println("1-Cadastrar um novo Jogo");
             System.out.println("2-Mostrar Jogos Disponiveis");
-            System.out.println("3-Mostrar o jogo mais caro");
+            System.out.println("3-Mostrar o jogo mais barato");
             System.out.println("4-Mostrar DLCs");
             System.out.println("5-Sair da plataforma");
             System.out.println("----------------------------------------------------------------------");
@@ -45,7 +45,7 @@ public class Main {
                     p1.mostraInfo();
                     break;
                 case 3:
-                    p1.mostraMaisCaro();
+                    p1.mostraMaisBarato();
                     break;
                 case 4:
                     p1.calculaDlc();
@@ -56,6 +56,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opcao não disponível, digite novamente!");
+                    break;
 
             }
         }
