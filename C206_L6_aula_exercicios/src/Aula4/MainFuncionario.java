@@ -1,4 +1,5 @@
-import java.sql.SQLOutput;
+package Aula4;
+
 import java.util.Scanner;
 
 public class MainFuncionario {

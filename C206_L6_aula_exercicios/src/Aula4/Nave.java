@@ -1,3 +1,5 @@
+package Aula4;
+
 public class Nave {
     String nome;
     int velocidade;
@@ -8,7 +10,7 @@ public class Nave {
         this.velocidade = velocidade;
         this.velocidadeDaluz = velocidadeDaluz;
 
-        //this.arma = new Arma(tipodaArma, forca); --> diciona arma automticamente
+        //this.arma = new Aula4.Arma(tipodaArma, forca); --> diciona arma automticamente
         this.arma = arma;
     }
 

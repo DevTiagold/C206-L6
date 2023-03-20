@@ -1,3 +1,5 @@
+package Aulas;
+
 import java.util.Scanner;
 public class Exer_IMC {
     public static void main(String[] args) {
