@@ -10,7 +10,7 @@ public class Nave {
         this.velocidade = velocidade;
         this.velocidadeDaluz = velocidadeDaluz;
 
-        //this.arma = new Aula4.Arma(tipodaArma, forca); --> diciona arma automticamente
+        //this.arma = new Aula4.Arma(tipodaArma, forca); --> adiciona arma automticamente -- composicao
         this.arma = arma;
     }
 

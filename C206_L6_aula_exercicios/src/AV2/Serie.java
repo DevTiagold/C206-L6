@@ -9,8 +9,6 @@ public class Serie {
     Diretor diretores;
     //relação de composição com a classe Serie
 
-
-
     public Serie(String nome, double nota, int temporadas, boolean finalizada, String nomeDiretor) {
         this.nome = nome;
         this.nota = nota;

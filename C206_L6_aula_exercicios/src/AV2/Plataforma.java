@@ -5,7 +5,8 @@ public class Plataforma {
     Serie[] series = new Serie[10];
     int quantidade;
     int quantida_series, series_grandes, quantidadeDetemporadas;
-    double media, porcentagem;
+    float media;
+    float porcentagem;
     String nomeDaMaisLonga;
 
     public void mostrandoInfo(){
@@ -22,6 +23,10 @@ public class Plataforma {
                 series[i] = serie;
                 System.out.println("Serie Adicionada!!");
                 quantida_series++;
+                if(series[i].temporadas >= 3){
+                    quantidadeDetemporadas += series[i].nota;
+                    series_grandes++;
+                }
                 break;
             }
         }
@@ -37,19 +42,28 @@ public class Plataforma {
         return nomeDaMaisLonga;
 
     }
-
     public void mediaPorcentagem(){
-        for(int i = 0; i < series.length;i++){
+        //series_grandes = 0;
+        //quantidadeDetemporadas = 0 ;
+        //quantida_series = 0;
+        /*for(int i = 0; i < series.length;i++){
             if(series[i] != null && series[i].temporadas >= 3){
                 quantidadeDetemporadas += series[i].nota;
                 series_grandes++;
             }
-        }
+        }*/
+        /*for(int i = 0; i < series.length; i++){
+            if(series[i] != null){
+                quantida_series++;
+            }
+        }*/
+
         //aritmetica
-        media = quantidadeDetemporadas/series_grandes;
+        media = (float)quantidadeDetemporadas/series_grandes;
         System.out.println("Media das notas das series grandes: " + media);
+
         //porcentagem
-        porcentagem = (series_grandes*100)/quantida_series;
+        porcentagem = (float)series_grandes*100/quantida_series;
         System.out.println("Porcentagem das series com mais temporadas: " + porcentagem + "%");
     }
 }
