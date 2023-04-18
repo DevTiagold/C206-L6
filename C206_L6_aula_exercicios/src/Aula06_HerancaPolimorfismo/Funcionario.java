@@ -1,11 +1,11 @@
 package Aula06_HerancaPolimorfismo;
 
-public class Funcionario {
+public  class Funcionario {
     private String nome;
     private int idade;
     private double salario;
 
-    public void mostraInfo(){
+    public  void mostraInfo(){
         System.out.println("Nome do Funcionario: " + nome);
         System.out.println("Idade do Funcionario: " + idade);
         System.out.println("Salário do Funcionario: " + salario);

@@ -1,6 +1,8 @@
 package Aula06_HerancaPolimorfismo;
 
-public class Engenheiro extends Funcionario{
+import java.sql.SQLOutput;
+
+public class Engenheiro extends Funcionario implements Gerencia{
     /*String nome;
     int idade;
     double salario;
@@ -42,4 +44,15 @@ public class Engenheiro extends Funcionario{
     public double salarioBonus() {
         return super.salarioBonus()+50238;
     }
+
+    @Override
+    public void gerencia() {
+
+    }
+
+    @Override
+    public void estuda() {
+        System.out.println("O engenheiro está estudando");
+    }
+
 }
